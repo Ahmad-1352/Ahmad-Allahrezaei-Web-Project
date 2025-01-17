@@ -1,3 +1,4 @@
+/* تنظیمات عمومی */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -10,25 +11,17 @@ a {
     color: white;
 }
 
-header {
+/* صفحه اول */
+.page1 {
     position: relative;
     text-align: right;
     color: white;
     height: 100vh;
     overflow: hidden;
+    background: url('Image/First.png') no-repeat center center/cover;
 }
 
-header .background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-header .logo {
+.page1 .logo {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -36,18 +29,18 @@ header .logo {
     height: auto;
 }
 
-header nav {
+.page1 nav {
     position: absolute;
     top: 20px;
     right: 20px;
 }
 
-header nav a {
+.page1 nav a {
     margin-left: 15px;
     font-size: 1.2rem;
 }
 
-header .content {
+.page1 .content {
     position: absolute;
     top: 40%;
     right: 20%;
@@ -55,17 +48,17 @@ header .content {
     max-width: 400px;
 }
 
-header .content h1 {
+.page1 .content h1 {
     font-size: 3rem;
     margin: 0 0 10px;
 }
 
-header .content p {
+.page1 .content p {
     font-size: 1.5rem;
     margin: 0;
 }
 
-header .buttons {
+.page1 .buttons {
     position: absolute;
     top: 60%;
     right: 20%;
@@ -73,7 +66,7 @@ header .buttons {
     gap: 20px;
 }
 
-header .button {
+.page1 .button {
     background-color: rgba(255, 255, 255, 0.8);
     color: #333;
     padding: 10px 20px;
@@ -82,6 +75,205 @@ header .button {
     transition: background-color 0.3s;
 }
 
-header .button:hover {
+.page1 .button:hover {
     background-color: rgba(255, 255, 255, 1);
+}
+
+/* صفحه دوم */
+.page2 {
+    position: relative;
+    height: 100vh;
+    background: url(Image/25.jpg) no-repeat center center/cover;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.page2 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.page2 .header-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.page2 .center-top {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.page2 .center-top a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.page2 .center-top a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+/* صفحه سوم */
+.page3 {
+    position: relative;
+    height: 100vh;
+    background: url('Image/Service.png') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 50px;
+}
+
+.page3 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* شفافیت برای متن */
+    z-index: 1;
+}
+
+.page3 .services-content {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    color: white;
+    max-width: 400px;
+}
+
+.page3 .services-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.page3 .services-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page3 .services-content ul li {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+/* صفحه چهارم */
+.page4 {
+    padding: 20px;
+    background-color: #000; /* بک‌گراند سیاه */
+    color: white;
+    min-height: 100vh;
+}
+
+.artwork-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.artwork-header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.artwork-header a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.artwork-header a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* سه ستون */
+    gap: 20px;
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s; /* افکت hover */
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* زوم هنگام هاور */
+}
+/* صفحه پنجم*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* پس‌زمینه مشکی */
+    color: white; /* متن سفید */
+}
+
+.team-page {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.team-members {
+    display: grid; /* استفاده از grid برای کنترل دقیق موقعیت‌ها */
+    grid-template-columns: repeat(4, 1fr); /* چهار ستون */
+    gap: 20px; /* فاصله بین اعضای تیم */
+    justify-items: center; /* تراز کردن همه اعضا به مرکز */
+}
+
+.member {
+    width: 200px;
+    text-align: center;
+}
+
+.member img {
+    width: 100%;
+    height: auto;
+}
+
+.member p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* در صفحه‌های بزرگتر، هر چهار نفر در یک ردیف قرار می‌گیرند */
+@media (max-width: 768px) {
+    .team-members {
+        grid-template-columns: repeat(2, 1fr); /* دو ستون در صفحه‌های کوچک‌تر */
+    }
 }
