@@ -74,7 +74,7 @@
             <h1>Enigma Team</h1>
         </header>
         <div class="team-members">
-         
+            <!-- اولین چهار نفر -->
             <div class="member">
                 <img src="Image/Vector.png" alt="Ahmad Allahrezaei">
                 <p>Ahmad Allahrezaei<br>Founder / Art director</p>
@@ -92,7 +92,7 @@
                 <p>Name<br>2D Artist</p>
             </div>
 
-           
+            <!-- چهار تای دوم -->
             <div class="member second-row">
                 <img src="Image/Vector.png" alt="Name">
                 <p>Name<br>Animator</p>
@@ -111,53 +111,38 @@
             </div>
         </div>
     </section>
-    <div class="page6">
-        <div class="client-header">
-        <h1>What Our Clients Say</h1>
-        </div>
+
+    <!-- صفحه ششم -->
+    <section class="page6">
+        <header class="client-header">
+            <h1>What Client Said</h1>
+        </header>
         <div class="testimonials">
-      
-        <div class="testimonial left">
-        <div class="client-image">
-        <img src="Image/Person_01.png" alt="Client 1">
+            <div class="testimonial">
+                <div class="client-image">
+                    <img src="Image/Person_01.png" alt="Client 1">
+                </div>
+                <p>"The attention to detail in their work is truly impressive. Highly recommended!"</p>
+                <h3>John Doe</h3>
+                <p>Game Developer</p>
+            </div>
+            <div class="testimonial">
+                <div class="client-image">
+                    <img src="Image/Person_02.png" alt="Client 2">
+                </div>
+                <p>"Their creativity and professionalism exceeded our expectations."</p>
+                <h3>Jane Smith</h3>
+                <p>Art Director</p>
+            </div>
+            <div class="testimonial">
+                <div class="client-image">
+                    <img src="Image/Person_03.png" alt="Client 3">
+                </div>
+                <p>"Working with Enigma Studio was an incredible experience. They delivered above and beyond."</p>
+                <h3>Michael Brown</h3>
+                <p>Project Manager</p>
+            </div>
         </div>
-        <h3>A. Attention to Detail</h3>
-        <p>
-        The attention to detail in Enigma Studio’s sci-fi project is truly impressive.
-        From the intricately designed sci-fi doors to the futuristic holographic interface system,
-        every aspect of the game has been carefully crafted to create a truly immersive experience for players.
-        The creativity and imagination that went into this project is evident in every element,
-        making it a must-play for any sci-fi enthusiast.
-        </p>
-        <div class="stars">★★★★★</div>
-        </div>
-      
-        <div class="testimonial center">
-        <div class="client-image">
-        <img src="Image/Person_02.png" alt="Client 2">
-        </div>
-        <h3>B. Diverse Characters</h3>
-        <p>
-        The characters are diverse and compelling, each with their own unique abilities and personalities.
-        The game also features stunning graphics and immersive sound design, making it a truly captivating experience for players.
-        Overall, Enigma Studio has created a truly innovative and engaging sci-fi package that is sure to leave players wanting more.
-        </p>
-        <div class="stars">★★★★★</div>
-        </div>
-       
-        <div class="testimonial right">
-        <div class="client-image">
-        <img src="Image/Person_03.png" alt="Client 3">
-        </div>
-        <h3>C. Thrilling Journey</h3>
-        <p>
-        Enigma Studio’s sci-fi project takes players on a thrilling journey through space and time,
-        with each sci-fi door leading to a new and exciting challenge.
-        The holographic interface system adds an extra layer of interactivity, allowing players to truly feel like they are part of the action.
-        With its captivating storyline and innovative gameplay mechanics, this project is a shining example of the studio’s talent
-        and dedication to creating top-notch sci-fi experiences.
-        </p>
-        <div class="stars">★★★★★</div>
-        </div>
-        </div>
-        </div>
+    </section>
+</body>
+</html>

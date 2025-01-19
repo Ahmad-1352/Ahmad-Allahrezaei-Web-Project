@@ -264,102 +264,101 @@ a:hover {
     }
 }
 
-
+/* صفحه ششم */
 .page6 {
-padding: 40px;
-background-color: #000;
-color: #fff; 
-text-align: center;
-min-height: 200vh;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
 }
+
 .client-header h1 {
-font-size: 3rem; 
-margin-bottom: 50px; 
-color: #fff; 
-text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
 }
+
 .testimonials {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 20px;
-padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
+
 .testimonial {
-background: url('Image/Rectangle 6.png') no-repeat center center/cover;
-border-radius: 10px;
-padding: 40px 20px;
-text-align: center;
-color: white;
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: center;
-height: auto;
-position: relative;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s;
+    position: relative;
+    overflow: hidden;
 }
-.testimonial.center {
-background: url('Image/Rectangle 7.png') no-repeat center center/cover;
-transform: rotate(0deg);
-}
-.testimonial.left {
-background: url('Image/Rectangle 6.png') no-repeat center center/cover;
 
+.testimonial:nth-child(2) {
+    background: url('Image/Rectangle 7.png') no-repeat center center/cover;
 }
-.testimonial.center {
-background: url('Image/Rectangle 7.png') no-repeat center center/cover;
 
+.testimonial:nth-child(1),
+.testimonial:nth-child(3) {
+    background: url('Image/Rectangle 6.png') no-repeat center center/cover;
 }
-.testimonial.right {
-background: url('Image/Rectangle 6.png') no-repeat center center/cover;
-transform: rotate(0deg); 
+
+.testimonial:hover {
+    transform: scale(1.05);
 }
+
 .client-image {
-width: 80px;
-height: 80px;
-margin-bottom: 15px;
-background-color: #ddd;
-border-radius: 50%;
-overflow: hidden;
-display: flex;
-align-items: center;
-justify-content: center;
-position: absolute;
-top: -40px;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px;
+    background-color: #ddd;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .client-image img {
-width: 100%;
-height: 100%;
-object-fit: cover;
-border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
-.testimonial h3 {
-font-size: 1.2rem;
-margin: 10px 0;
-color: white;
-}
+
 .testimonial p {
-font-size: 1rem;
-color: white;
-margin: 10px 0;
-line-height: 1.5;
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0;
 }
-.testimonial .stars {
-margin-top: 10px;
-color: gold;
-font-size: 1.2rem;
+
+.testimonial h3 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: #222;
 }
-.testimonial.left h3::before {
-content: "A.";
-font-weight: bold;
-margin-right: 5px;
+
+.testimonial h3 + p {
+    font-size: 0.9rem;
+    color: #888;
 }
-.testimonial.center h3::before {
-content: "B.";
-font-weight: bold;
-margin-right: 5px;
+
+.stars {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 5px;
 }
-.testimonial.right h3::before {
-content: "C.";
-font-weight: bold;
-margin-right: 5px;
+
+.stars span {
+    color: gold;
+    font-size: 1.2rem;
+}
+
+/* افزودن ستاره‌ها */
+.testimonial::after {
+    content: '★★★★★';
+    color: gold;
+    font-size: 1.2rem;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
 }
