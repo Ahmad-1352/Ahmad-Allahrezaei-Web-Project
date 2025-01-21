@@ -1,0 +1,264 @@
+/* تنظیمات کلی */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* هدر */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #333;
+}
+
+.logo img {
+    width: 120px; /* سایز لوگو */
+    height: auto;
+}
+
+.categories ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.categories li {
+    font-size: 16px;
+}
+
+.categories a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 20px;
+}
+
+.categories a:hover {
+    color: #3DB8A5; /* رنگ لینک در هاور */
+}
+
+/* عنوان صفحه */
+.page-title {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.page-title h1 {
+    font-size: 36px;
+    color: #fff;
+}
+
+/* گالری */
+.gallery-section {
+    padding: 20px 40px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(447px, 1fr)); /* چینش تصاویر به صورت داینامیک */
+    gap: 20px;
+    justify-items: center;
+}
+
+.gallery img {
+    width: 447px;
+    height: 251px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+.footer {
+    display: flex;
+    flex-direction: row; /* چینش افقی */
+    justify-content: space-between; /* فاصله بین چپ و راست */
+    align-items: flex-start; /* تراز عمودی بالا */
+    flex-wrap: wrap; /* برای تطبیق با اندازه صفحه */
+    padding: 20px 40px;
+    background-color: #1a1a1a;
+    color: #cccccc;
+}
+
+
+.footer-left {
+    flex: 1; /* اشغال فضای چپ */
+    max-width: 60%; /* کنترل عرض بخش چپ */
+    text-align: left;
+}
+
+.footer-logo {
+    font-size: 30px; /* سایز بزرگ متن "Enigma Studio" */
+    color: #fff;
+    margin: 0;
+    display: inline-block; /* کنار لوگو قرار می‌گیرد */
+    vertical-align: middle; /* تراز عمودی با لوگو */
+}
+
+.footer-logo-image {
+    width: 100px; /* سایز لوگو */
+    height: 100px;
+    margin-left: 10px; /* فاصله از متن "Enigma Studio" */
+    vertical-align: middle; /* تراز عمودی با متن */
+}
+
+.social-icons {
+    margin-top: 10px; /* فاصله بین لوگو و آیکون‌ها */
+    display: flex;
+    gap: 15px; /* فاصله بین آیکون‌ها */
+}
+
+.social-icons i {
+    color: #fff; /* رنگ آیکون‌ها */
+    font-size: 30px; /* اندازه آیکون‌ها */
+    cursor: pointer; /* اشاره‌گر به شکل کلیک تغییر می‌کند */
+    transition: color 0.3s ease; /* انیمیشن تغییر رنگ */
+}
+
+.social-icons i:hover {
+    color: #aaa; /* رنگ آیکون در حالت هاور */
+}
+.footer-middle {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: left; /* متن را چپ‌چین می‌کند */
+    margin-left: 0; /* پاراگراف را به سمت چپ می‌برد */
+    max-width: 600px; /* عرض حداکثر برای جلوگیری از گسترش بیش از حد */
+    margin-bottom: 20px; /* کمی فاصله از سایر عناصر */
+    color: #aaa;
+    line-height: 1.5; /* فاصله مناسب بین خطوط */
+    margin-top: 10px;
+}
+
+.footer-middle a {
+    color: #cccccc;
+    text-decoration: none;
+    margin-right: 10px;
+    
+    
+}
+
+.footer-middle a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.email-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%; /* عرض کامل در بخش چپ */
+    max-width: 300px; /* محدود کردن عرض باکس ایمیل */
+    margin-top: 20px;
+}
+.email-input {
+    display: flex;
+    align-items: center; /* هم‌ترازی عمودی محتوا */
+    justify-content: flex-start; /* چپ‌چین کردن محتوا */
+    width: 100%; /* تغییر اندازه به نسبت فوتر */
+    max-width: 400px; /* عرض حداکثر برای کوچک‌تر شدن باکس */
+    margin-top: 20px; /* کمی فاصله از عناصر بالا */
+    padding: 10px;
+    background-color: #ffffff; /* رنگ پس‌زمینه */
+
+    border-radius: 5px;
+}
+
+.email-box input[type="email"] {
+    flex-grow: 1;
+    border: none;
+    background: #fff;
+    border-radius: 8px;
+    color: #000000;
+    padding: 5px 10px;
+    font-size: 14px;
+    outline: none;
+    width: 8px;
+}
+
+.email-box button {
+    background-color: #ffffff;
+    color: #575757;
+    font-size: 16px; /* اندازه مناسب متن دکمه */
+    border: none;
+    padding: 10px 20px; /* بزرگ‌تر شدن دکمه */
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+.email-box button:hover {
+    background-color: #3DB8A5;
+}
+.footer-right-container {
+    display: flex;
+    flex-direction: column; /* چینش عناصر به صورت عمودی */
+    align-items: flex-start; /* چپ‌چین کردن محتوا */
+    gap: 20px; /* فاصله بین ستون‌ها و ایمیل */
+    margin-top: 180px; /* پایین‌تر آوردن کل بخش ستون‌ها و ایمیل */
+    
+}
+
+.footer-right {
+    display: flex; /* چینش ستون‌ها به صورت افقی */
+    flex-direction: row;
+    gap: 40px; /* فاصله بین ستون‌ها */
+    text-align: left;
+    
+}
+
+.footer-right .column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.footer-right .column li {
+    margin-bottom: 10px; /* فاصله بین آیتم‌های هر ستون */
+    font-size: 14px;
+    color: #aaa;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.footer-right .column li:hover {
+    color: #fff;
+}
+
+.footer-email {
+    display: flex; /* چینش ایمیل و آیکون در یک خط */
+    align-items: center;
+    gap: 10px; /* فاصله بین آیکون و متن */
+    font-size: 14px;
+    color: #aaa;
+    text-align: left; /* چپ‌چین بودن متن */
+    font-size: 25px;
+}
+
+.footer-email i {
+    font-size: 18px; /* سایز آیکون پاکت */
+    color: #3DB8A5;
+}
+
+.footer-email span {
+    color: #ccc; /* رنگ متن ایمیل */
+}

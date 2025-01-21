@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigma Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!-- صفحه اول -->
+    <header class="page1">
+        <img class="logo" src="Image/Logo.png" alt="Logo">
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#projects">Projects</a>
+            <a href="#shop">Shop</a>
+            <a href="#services">Services</a>
+        </nav>
+        <div class="content">
+            <h1>We are Enigma!</h1>
+            <p>A Game Art Studio</p>
+        </div>
+        <div class="buttons">
+            <a href="#" class="button">Get to know us</a>
+            <a href="#" class="button">Tell us your idea</a>
+        </div>
+    </header>
+
+    <!-- صفحه دوم -->
+    <section class="page2">
+        <div class="overlay"></div>
+        <div class="header-content">
+            <div class="center-top">
+                <a href="https://www.artstation.com/enigmastudio" target="_blank">Go to Shop</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- صفحه سوم -->
+    <section class="page3">
+        <div class="overlay"></div>
+        <div class="services-content">
+            <h2>Services:</h2>
+            <ul>
+                <li>3D Prop</li>
+                <li>Level Design</li>
+                <li>Environment Design</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- صفحه چهارم -->
+    <section class="page4">
+        <header class="artwork-header">
+            <h1>Our Work</h1>
+            <a href="https://www.artstation.com/enigmastudio" target="_blank">Artstation</a>
+        </header>
+        <div class="body-images">
+            <img src="Image/tbrender_Viewport_024 1.png" alt="Artwork 1">
+            <img src="Image/ahmx-allahrezaei-screenshot019 1.png" alt="Artwork 2">
+            <div class="image-with-text">
+                <img src="Image/Render_01 1.png" alt="Artwork 3">
+                <div class="overlay">
+                    <p>Explore More Art</p>
+                    <a href="artist.html" target="_blank" class="see-more-btn">See More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- صفحه پنجم -->
+    <section class="page5">
+        <header class="header">
+            <h1>Enigma Team</h1>
+        </header>
+        <div class="team-members">
+         
+            <div class="member">
+                <img src="Image/Vector.png" alt="Ahmad Allahrezaei">
+                <p>Ahmad Allahrezaei<br>Founder / Art director</p>
+            </div>
+            <div class="member">
+                <img src="Image/Vector.png" alt="Name">
+                <p>Name<br>Prop Artist</p>
+            </div>
+            <div class="member">
+                <img src="Image/Vector.png" alt="Name">
+                <p>Name<br>Environment Artist</p>
+            </div>
+            <div class="member">
+                <img src="Image/Vector.png" alt="Name">
+                <p>Name<br>2D Artist</p>
+            </div>
+
+           
+            <div class="member second-row">
+                <img src="Image/Vector.png" alt="Name">
+                <p>Name<br>Animator</p>
+            </div>
+            <div class="member second-row">
+                <img src="Image/Vector.png" alt="Name">
+                <p>Name<br>Sculptor</p>
+            </div>
+            <div class="member second-row">
+                <img src="Image/Vector.png" alt="Name">
+                <p>Name<br>3D Artist</p>
+            </div>
+            <div class="member second-row">
+                <img src="Image/Vector.png" alt="Name">
+                <p>Name<br>3D Artist</p>
+            </div>
+        </div>
+    </section>
+    <div class="page6">
+        <div class="client-header">
+        <h1>What Our Clients Say</h1>
+        </div>
+        <div class="testimonials">
+      
+        <div class="testimonial left">
+        <div class="client-image">
+        <img src="Image/Person_01.png" alt="Client 1">
+        </div>
+        <h3>A. Attention to Detail</h3>
+        <p>
+        The attention to detail in Enigma Studio’s sci-fi project is truly impressive.
+        From the intricately designed sci-fi doors to the futuristic holographic interface system,
+        every aspect of the game has been carefully crafted to create a truly immersive experience for players.
+        The creativity and imagination that went into this project is evident in every element,
+        making it a must-play for any sci-fi enthusiast.
+        </p>
+        <div class="stars">★★★★★</div>
+        </div>
+      
+        <div class="testimonial center">
+        <div class="client-image">
+        <img src="Image/Person_02.png" alt="Client 2">
+        </div>
+        <h3>B. Diverse Characters</h3>
+        <p>
+        The characters are diverse and compelling, each with their own unique abilities and personalities.
+        The game also features stunning graphics and immersive sound design, making it a truly captivating experience for players.
+        Overall, Enigma Studio has created a truly innovative and engaging sci-fi package that is sure to leave players wanting more.
+        </p>
+        <div class="stars">★★★★★</div>
+        </div>
+       
+        <div class="testimonial right">
+        <div class="client-image">
+        <img src="Image/Person_03.png" alt="Client 3">
+        </div>
+        <h3>C. Thrilling Journey</h3>
+        <p>
+        Enigma Studio’s sci-fi project takes players on a thrilling journey through space and time,
+        with each sci-fi door leading to a new and exciting challenge.
+        The holographic interface system adds an extra layer of interactivity, allowing players to truly feel like they are part of the action.
+        With its captivating storyline and innovative gameplay mechanics, this project is a shining example of the studio’s talent
+        and dedication to creating top-notch sci-fi experiences.
+        </p>
+        <div class="stars">★★★★★</div>
+        </div>
+        </div>
+
+        <div class="newsletter-section">
+            <div class="newsletter-container">
+                <!-- بخش تصویر -->
+                <div class="newsletter-image">
+                    <img src="Image/tbrender_Viewport 1.png" alt="Stay in touch">
+                </div>
+                <!-- بخش متن -->
+                <div class="newsletter-content">
+                    <h2>Want to stay in touch?</h2>
+                    <h1>Newsletter Subscribe</h1>
+                    <p class="newsletter-description">
+                        In order to start receiving our news, all you have to do is enter your email address. 
+                        Everything else will be taken care of by us. We will send you emails containing information about the game. 
+                        We don’t spam.
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit">Subscribe now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+<!-- صفحه ۸: فوتر -->
+<footer class="footer">
+    <div class="footer">
+        <!-- بخش چپ -->
+        <div class="footer-left">
+            <h1 class="footer-logo">Enigma Studio 
+                <img src="Image/Logo.png" alt="Logo" class="footer-logo-image">
+            </h1>
+            <div class="social-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-pinterest"></i>
+            </div>
+            <p class="footer-middle">
+                All company names, brand names, trademarks, logos, illustrations, videos and any other intellectual property
+                (Intellectual Property) published on this website are the property of their respective owners. Any non-
+                authorized usage of Intellectual Property is strictly prohibited and any violation will be prosecuted under the
+                law.
+            </p>
+            <p>© 2024 R8S ENTERTAINMENT LTD dba Enigma Studio.All rights reserved.
+                Privacy PolicyCookies PolicyAnti-Fraud Hiring Policies</p>
+            <div class="email-box">
+                <input type="email" placeholder="Your Email">
+                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    
+        <div class="footer-right-container">
+            <!-- ستون‌های راست -->
+            <div class="footer-right">
+                <div class="column">
+                    <ul>
+                        <li>3D Prop</li>
+                        <li>Level Design</li>
+                        <li>Environment Design</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul>
+                        <li>Shop</li>
+                        <li>Projects</li>
+                        <li>About Us</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <!-- ایمیل انیگما -->
+            <div class="footer-email">
+                <i class="fas fa-envelope"></i>
+                <span>enigma.studiioo@gmail.com</span>
+            </div>
+        </div>
+    </div>
+</footer>

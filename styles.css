@@ -205,19 +205,75 @@ a:hover {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+/* بخش بادی برای تصاویر */
+/* بخش کلی تصاویر */
+.body-images {
+    display: flex;
+    flex-direction: column; /* تصاویر به صورت عمودی */
+    gap: 20px; /* فاصله بین تصاویر */
+    margin-top: 20px;
 }
 
-.gallery img {
+.body-images img {
     width: 100%;
-    transition: transform 0.3s;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.gallery img:hover {
-    transform: scale(1.05);
+/* بخش خاص برای تصویر آخر */
+.image-with-text {
+    position: relative;
+    display: inline-block; /* برای مدیریت هم‌پوشانی متن */
+}
+
+.image-with-text img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* هم‌پوشانی متن */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* پس‌زمینه نیمه‌شفاف */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* متن را در وسط عمودی قرار می‌دهد */
+    align-items: center; /* متن را در وسط افقی قرار می‌دهد */
+    opacity: 0; /* پیش‌فرض: پنهان */
+    transition: opacity 0.3s ease; /* انیمیشن ظاهرشدن */
+    border-radius: 10px;
+}
+
+.image-with-text:hover .overlay {
+    opacity: 1; /* هنگام هاور: نمایش */
+}
+
+/* استایل متن */
+.overlay p {
+    color: #fff;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* دکمه "See More" */
+.see-more-btn {
+    background: #848484;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.see-more-btn:hover {
+    background: #3DB8A5;
 }
 
 /* صفحه پنجم */
@@ -474,109 +530,185 @@ body {
 }
 /* فوتر */
 .footer {
-    background-color: #222; /* رنگ پس‌زمینه تیره */
-    color: #fff; /* رنگ متن */
-    padding: 40px 20px; /* فاصله داخلی */
-    text-align: center; /* تراز وسط */
-    font-family: Arial, sans-serif;
-}
-
-.footer-content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
+    flex-direction: row; /* چینش افقی */
+    justify-content: space-between; /* فاصله بین چپ و راست */
+    align-items: flex-start; /* تراز عمودی بالا */
+    flex-wrap: wrap; /* برای تطبیق با اندازه صفحه */
+    padding: 20px 40px;
+    background-color: #1a1a1a;
+    color: #cccccc;
 }
 
-.footer-logo h2 {
-    font-size: 24px;
-    margin: 10px 0;
+
+.footer-left {
+    flex: 1; /* اشغال فضای چپ */
+    max-width: 60%; /* کنترل عرض بخش چپ */
+    text-align: left;
 }
 
-.footer-logo img {
-    width: 80px;
-}
-
-.social-links a {
-    margin: 0 5px;
-    display: inline-block;
-}
-
-.social-links img {
-    width: 30px;
-    height: 30px;
-    filter: brightness(0) invert(1); /* سفید کردن آیکون‌ها */
-    transition: transform 0.3s;
-}
-
-.social-links img:hover {
-    transform: scale(1.2);
-}
-
-.footer-info p {
-    margin: 10px 0;
-    font-size: 14px;
-    line-height: 1.5;
-}
-
-.footer-links a {
-    margin: 0 10px;
-    color: #aaa;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.footer-links a:hover {
+.footer-logo {
+    font-size: 30px; /* سایز بزرگ متن "Enigma Studio" */
     color: #fff;
+    margin: 0;
+    display: inline-block; /* کنار لوگو قرار می‌گیرد */
+    vertical-align: middle; /* تراز عمودی با لوگو */
+}
+
+.footer-logo-image {
+    width: 100px; /* سایز لوگو */
+    height: 100px;
+    margin-left: 10px; /* فاصله از متن "Enigma Studio" */
+    vertical-align: middle; /* تراز عمودی با متن */
+}
+
+.social-icons {
+    margin-top: 10px; /* فاصله بین لوگو و آیکون‌ها */
+    display: flex;
+    gap: 15px; /* فاصله بین آیکون‌ها */
+}
+
+.social-icons i {
+    color: #fff; /* رنگ آیکون‌ها */
+    font-size: 30px; /* اندازه آیکون‌ها */
+    cursor: pointer; /* اشاره‌گر به شکل کلیک تغییر می‌کند */
+    transition: color 0.3s ease; /* انیمیشن تغییر رنگ */
+}
+
+.social-icons i:hover {
+    color: #aaa; /* رنگ آیکون در حالت هاور */
+}
+.footer-middle {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: left; /* متن را چپ‌چین می‌کند */
+    margin-left: 0; 
+    max-width: 600px; 
+    margin-bottom: 20px;
+    color: #aaa;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.footer-middle a {
+    color: #cccccc;
+    text-decoration: none;
+    margin-right: 10px;
+    
+    
+}
+
+.footer-middle a:hover {
     text-decoration: underline;
 }
 
-.footer-contact {
-    margin-top: 30px;
-}
-
-.newsletter {
+.footer-bottom {
     display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+    align-items: center;
+    gap: 10px;
 }
 
-.newsletter input {
+.email-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%; 
+    max-width: 300px; 
+    margin-top: 20px;
+}
+.email-input {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    width: 100%; 
+    max-width: 400px; 
+    margin-top: 20px; 
     padding: 10px;
-    font-size: 16px;
+    background-color: #ffffff;
+
+    border-radius: 5px;
+}
+
+.email-box input[type="email"] {
+    flex-grow: 1;
     border: none;
-    border-radius: 4px 0 0 4px;
+    background: #fff;
+    border-radius: 8px;
+    color: #000000;
+    padding: 5px 10px;
+    font-size: 14px;
     outline: none;
+    width: 8px;
 }
 
-.newsletter button {
-    padding: 10px;
+.email-box button {
+    background-color: #ffffff;
+    color: #575757;
     font-size: 16px;
-    background-color: #555;
-    color: #fff;
     border: none;
-    border-radius: 0 4px 4px 0;
+    padding: 10px 20px; 
+    border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-left: 10px;
 }
 
-.newsletter button:hover {
-    background-color: #777;
+.email-box button:hover {
+    background-color: #3DB8A5;
 }
-
-.contact-email {
+.footer-right-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 20px; 
+    margin-top: 180px; 
+    
 }
 
-.contact-email img {
-    width: 20px;
-    margin-right: 10px;
+.footer-right {
+    display: flex; 
+    flex-direction: row;
+    gap: 40px; 
+    text-align: left;
+    
 }
 
-.contact-email p {
-    font-size: 14px;
+.footer-right .column ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
+    
+}
+
+.footer-right .column li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #aaa;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.footer-right .column li:hover {
+    color: #fff;
+}
+
+.footer-email {
+    display: flex; 
+    align-items: center;
+    gap: 10px; 
+    font-size: 14px;
+    color: #aaa;
+    text-align: left; 
+    font-size: 25px;
+}
+
+.footer-email i {
+    font-size: 18px; 
+    color: #3DB8A5;
+}
+
+.footer-email span {
+    color: #ccc; 
 }

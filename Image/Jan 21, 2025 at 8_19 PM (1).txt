@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist's Portfolio</title>
+    <link rel="stylesheet" href="artists.css"> <!-- فایل CSS خارجی -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!-- هدر -->
+    <header class="main-header">
+        <div class="logo">
+            <img src="Image/logo.png" alt="Enigma Studio Logo">
+        </div>
+        <nav class="categories">
+            <ul>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#shop">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- بخش عنوان -->
+    <section class="page-title">
+        <h1>Artist's Portfolio</h1>
+    </section>
+
+    <!-- گالری تصاویر -->
+    <section class="gallery-section">
+        <div class="gallery">
+            <!-- تصاویر نمونه -->
+            <img src="Image/HighresScreenshot00016.png" alt="Sample 1">
+            <img src="Image/HighresScreenshot00018.png" alt="Sample 2">
+            <img src="Image/HighresScreenshot00000 1.png" alt="Sample 3">
+            <img src="Image/M240bravo_03 1.png" alt="Sample 4">
+            <img src="Image/ahmadallahrezaei-sks-m5966-04 1.png" alt="Sample 5">
+            <img src="Image/ahmad allahrezaei-uzi-full-auto-01 2.png" alt="Sample 6">
+            <img src="Image/Sci-fi_Environment_Pack (34).png" alt="Sample 7">
+            <img src="Image/Sci-fi_Environment_Pack (36).png" alt="Sample 8">
+            <img src="Image/Sci-fi_Environment_Pack (15).png" alt="Sample 9">
+            <img src="Image/tbrender_Viewport.png" alt="Sample 10">
+            <img src="Image/Render_03 2.png" alt="Sample 11">
+            <img src="Image/tbrender_Viewport_030 1.png" alt="Sample 12">
+            <img src="Image/furniture_Pack_Render_14.png" alt="Sample 13">
+            <img src="Image/furniture_Pack_Render_15.png" alt="Sample 14">
+            <img src="Image/furniture_Pack_Render_10.png" alt="Sample 15">
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer">
+            <!-- بخش چپ -->
+            <div class="footer-left">
+                <h1 class="footer-logo">Enigma Studio 
+                    <img src="Image/Logo.png" alt="Logo" class="footer-logo-image">
+                </h1>
+                <div class="social-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-pinterest"></i>
+                </div>
+                <p class="footer-middle">
+                    All company names, brand names, trademarks, logos, illustrations, videos and any other intellectual property
+                    (Intellectual Property) published on this website are the property of their respective owners. Any non-
+                    authorized usage of Intellectual Property is strictly prohibited and any violation will be prosecuted under the
+                    law.
+                </p>
+                <p>© 2024 R8S ENTERTAINMENT LTD dba Enigma Studio.All rights reserved.
+                    Privacy PolicyCookies PolicyAnti-Fraud Hiring Policies</p>
+                <div class="email-box">
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        
+            <div class="footer-right-container">
+                <!-- ستون‌های راست -->
+                <div class="footer-right">
+                    <div class="column">
+                        <ul>
+                            <li>3D Prop</li>
+                            <li>Level Design</li>
+                            <li>Environment Design</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <ul>
+                            <li>Shop</li>
+                            <li>Projects</li>
+                            <li>About Us</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <!-- ایمیل انیگما -->
+                <div class="footer-email">
+                    <i class="fas fa-envelope"></i>
+                    <span>enigma.studiioo@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

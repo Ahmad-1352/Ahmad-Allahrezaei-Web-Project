@@ -1,0 +1,714 @@
+/* تنظیمات عمومی */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: white;
+}
+
+/* لینک‌ها */
+a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ddd;
+}
+
+/* صفحه اول */
+.page1 {
+    position: relative;
+    height: 100vh;
+    text-align: right;
+    color: white;
+    background: url('Image/First.png') no-repeat center center/cover;
+}
+
+.page1 .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+}
+
+.page1 nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.page1 nav a {
+    margin-left: 15px;
+    font-size: 1.2rem;
+}
+
+.page1 .content {
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    text-align: right;
+    max-width: 400px;
+}
+
+.page1 .content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.page1 .content p {
+    font-size: 1.5rem;
+}
+
+.page1 .buttons {
+    position: absolute;
+    top: 60%;
+    right: 20%;
+    display: flex;
+    gap: 20px;
+}
+
+.page1 .button {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.page1 .button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* صفحه دوم */
+.page2 {
+    position: relative;
+    height: 100vh;
+    background: url('Image/25.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+}
+
+.page2 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.page2 .header-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.page2 .center-top {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.page2 .center-top a {
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.page2 .center-top a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* صفحه سوم */
+.page3 {
+    position: relative;
+    height: 100vh;
+    background: url('Image/Service.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 50px;
+}
+
+.page3 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.page3 .services-content {
+    position: relative;
+    z-index: 2;
+    max-width: 400px;
+}
+
+.page3 .services-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.page3 .services-content ul {
+    list-style: none;
+}
+
+.page3 .services-content ul li {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* صفحه چهارم */
+.page4 {
+    padding: 20px;
+    background-color: #000;
+}
+
+.artwork-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.artwork-header h1 {
+    font-size: 2.5rem;
+}
+
+.artwork-header a {
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.artwork-header a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* بخش بادی برای تصاویر */
+/* بخش کلی تصاویر */
+.body-images {
+    display: flex;
+    flex-direction: column; /* تصاویر به صورت عمودی */
+    gap: 20px; /* فاصله بین تصاویر */
+    margin-top: 20px;
+}
+
+.body-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* بخش خاص برای تصویر آخر */
+.image-with-text {
+    position: relative;
+    display: inline-block; /* برای مدیریت هم‌پوشانی متن */
+}
+
+.image-with-text img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* هم‌پوشانی متن */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* پس‌زمینه نیمه‌شفاف */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* متن را در وسط عمودی قرار می‌دهد */
+    align-items: center; /* متن را در وسط افقی قرار می‌دهد */
+    opacity: 0; /* پیش‌فرض: پنهان */
+    transition: opacity 0.3s ease; /* انیمیشن ظاهرشدن */
+    border-radius: 10px;
+}
+
+.image-with-text:hover .overlay {
+    opacity: 1; /* هنگام هاور: نمایش */
+}
+
+/* استایل متن */
+.overlay p {
+    color: #fff;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* دکمه "See More" */
+.see-more-btn {
+    background: #848484;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.see-more-btn:hover {
+    background: #3DB8A5;
+}
+
+/* صفحه پنجم */
+.team-page {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.team-page h1 {
+    font-size: 48px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 100px;
+}
+
+.member {
+    text-align: center;
+}
+
+.member img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.member p {
+    margin-top: 10px;
+}
+
+/* رسانه‌های کوچکتر */
+@media (max-width: 768px) {
+    .team-members {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+.page6 {
+    padding: 40px;
+    background-color: #000;
+    color: #fff; 
+    text-align: center;
+    min-height: 200vh;
+    margin-bottom: 0; /* حذف فاصله پایین */
+}
+.client-header h1 {
+font-size: 3rem; 
+margin-bottom: 50px; 
+color: #fff; 
+text-align: center;
+}
+.testimonials {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+padding: 0 20px;
+}
+.testimonial {
+background: url('Image/Rectangle 6.png') no-repeat center center/cover;
+border-radius: 10px;
+padding: 40px 20px;
+text-align: center;
+color: white;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+height: auto;
+position: relative;
+}
+.testimonial.center {
+background: url('Image/Rectangle 7.png') no-repeat center center/cover;
+transform: rotate(0deg);
+}
+.testimonial.left {
+background: url('Image/Rectangle 6.png') no-repeat center center/cover;
+
+}
+.testimonial.center {
+background: url('Image/Rectangle 7.png') no-repeat center center/cover;
+
+}
+.testimonial.right {
+background: url('Image/Rectangle 6.png') no-repeat center center/cover;
+transform: rotate(0deg); 
+}
+.client-image {
+width: 80px;
+height: 80px;
+margin-bottom: 15px;
+background-color: #ddd;
+border-radius: 50%;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+top: -40px;
+}
+.client-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 50%;
+}
+.testimonial h3 {
+font-size: 1.2rem;
+margin: 10px 0;
+color: white;
+}
+.testimonial p {
+font-size: 1rem;
+color: white;
+margin: 10px 0;
+line-height: 1.5;
+}
+.testimonial .stars {
+margin-top: 10px;
+color: gold;
+font-size: 1.2rem;
+}
+.testimonial.left h3::before {
+content: "A.";
+font-weight: bold;
+margin-right: 5px;
+}
+.testimonial.center h3::before {
+content: "B.";
+font-weight: bold;
+margin-right: 5px;
+}
+.testimonial.right h3::before {
+content: "C.";
+font-weight: bold;
+margin-right: 5px;
+}
+
+.previous-section {
+    margin-bottom: 10px; /* کاهش فاصله پایین بخش قبلی */
+}
+
+.newsletter-section {
+    margin-top: 10px; /* کاهش فاصله بالا بخش جدید */
+}
+
+#newsletter-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px; /* کاهش padding کلی */
+    background: url('Image/Rectangle 6.png') no-repeat center center/cover;
+    box-sizing: border-box;
+    margin-top: 0; /* حذف فاصله بالا */
+}
+
+.newsletter-section {
+    margin-top: 0; /* فاصله بالا را صفر کن */
+    padding: 20px; /* کاهش padding کلی */
+    background-color: #020C29;
+    color: #333;
+}
+
+/* بخش بالا را بررسی کن و به جای فاصله اضافی، margin را حذف کن */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.newsletter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.newsletter-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-content {
+    max-width: 500px;
+    text-align: left;
+}
+
+.newsletter-content h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.newsletter-content h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.newsletter-content .newsletter-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #3DB8A5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #0056b3;
+}
+
+.newsletter-section {
+    margin-top: 10px; /* برای اطمینان از حذف فاصله بین دو بخش */
+}
+
+.page6 .testimonials {
+    margin-bottom: 0; /* حذف فاصله پایین در بخش testimonials */
+}
+/* فوتر */
+.footer {
+    display: flex;
+    flex-direction: row; /* چینش افقی */
+    justify-content: space-between; /* فاصله بین چپ و راست */
+    align-items: flex-start; /* تراز عمودی بالا */
+    flex-wrap: wrap; /* برای تطبیق با اندازه صفحه */
+    padding: 20px 40px;
+    background-color: #1a1a1a;
+    color: #cccccc;
+}
+
+
+.footer-left {
+    flex: 1; /* اشغال فضای چپ */
+    max-width: 60%; /* کنترل عرض بخش چپ */
+    text-align: left;
+}
+
+.footer-logo {
+    font-size: 30px; /* سایز بزرگ متن "Enigma Studio" */
+    color: #fff;
+    margin: 0;
+    display: inline-block; /* کنار لوگو قرار می‌گیرد */
+    vertical-align: middle; /* تراز عمودی با لوگو */
+}
+
+.footer-logo-image {
+    width: 100px; /* سایز لوگو */
+    height: 100px;
+    margin-left: 10px; /* فاصله از متن "Enigma Studio" */
+    vertical-align: middle; /* تراز عمودی با متن */
+}
+
+.social-icons {
+    margin-top: 10px; /* فاصله بین لوگو و آیکون‌ها */
+    display: flex;
+    gap: 15px; /* فاصله بین آیکون‌ها */
+}
+
+.social-icons i {
+    color: #fff; /* رنگ آیکون‌ها */
+    font-size: 30px; /* اندازه آیکون‌ها */
+    cursor: pointer; /* اشاره‌گر به شکل کلیک تغییر می‌کند */
+    transition: color 0.3s ease; /* انیمیشن تغییر رنگ */
+}
+
+.social-icons i:hover {
+    color: #aaa; /* رنگ آیکون در حالت هاور */
+}
+.footer-middle {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: left; /* متن را چپ‌چین می‌کند */
+    margin-left: 0; /* پاراگراف را به سمت چپ می‌برد */
+    max-width: 600px; /* عرض حداکثر برای جلوگیری از گسترش بیش از حد */
+    margin-bottom: 20px; /* کمی فاصله از سایر عناصر */
+    color: #aaa;
+    line-height: 1.5; /* فاصله مناسب بین خطوط */
+    margin-top: 10px;
+}
+
+.footer-middle a {
+    color: #cccccc;
+    text-decoration: none;
+    margin-right: 10px;
+    
+    
+}
+
+.footer-middle a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.email-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%; /* عرض کامل در بخش چپ */
+    max-width: 300px; /* محدود کردن عرض باکس ایمیل */
+    margin-top: 20px;
+}
+.email-input {
+    display: flex;
+    align-items: center; /* هم‌ترازی عمودی محتوا */
+    justify-content: flex-start; /* چپ‌چین کردن محتوا */
+    width: 100%; /* تغییر اندازه به نسبت فوتر */
+    max-width: 400px; /* عرض حداکثر برای کوچک‌تر شدن باکس */
+    margin-top: 20px; /* کمی فاصله از عناصر بالا */
+    padding: 10px;
+    background-color: #ffffff; /* رنگ پس‌زمینه */
+
+    border-radius: 5px;
+}
+
+.email-box input[type="email"] {
+    flex-grow: 1;
+    border: none;
+    background: #fff;
+    border-radius: 8px;
+    color: #000000;
+    padding: 5px 10px;
+    font-size: 14px;
+    outline: none;
+    width: 8px;
+}
+
+.email-box button {
+    background-color: #ffffff;
+    color: #575757;
+    font-size: 16px; /* اندازه مناسب متن دکمه */
+    border: none;
+    padding: 10px 20px; /* بزرگ‌تر شدن دکمه */
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+.email-box button:hover {
+    background-color: #3DB8A5;
+}
+.footer-right-container {
+    display: flex;
+    flex-direction: column; /* چینش عناصر به صورت عمودی */
+    align-items: flex-start; /* چپ‌چین کردن محتوا */
+    gap: 20px; /* فاصله بین ستون‌ها و ایمیل */
+    margin-top: 180px; /* پایین‌تر آوردن کل بخش ستون‌ها و ایمیل */
+    
+}
+
+.footer-right {
+    display: flex; /* چینش ستون‌ها به صورت افقی */
+    flex-direction: row;
+    gap: 40px; /* فاصله بین ستون‌ها */
+    text-align: left;
+    
+}
+
+.footer-right .column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.footer-right .column li {
+    margin-bottom: 10px; /* فاصله بین آیتم‌های هر ستون */
+    font-size: 14px;
+    color: #aaa;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.footer-right .column li:hover {
+    color: #fff;
+}
+
+.footer-email {
+    display: flex; /* چینش ایمیل و آیکون در یک خط */
+    align-items: center;
+    gap: 10px; /* فاصله بین آیکون و متن */
+    font-size: 14px;
+    color: #aaa;
+    text-align: left; /* چپ‌چین بودن متن */
+    font-size: 25px;
+}
+
+.footer-email i {
+    font-size: 18px; /* سایز آیکون پاکت */
+    color: #3DB8A5;
+}
+
+.footer-email span {
+    color: #ccc; /* رنگ متن ایمیل */
+}
